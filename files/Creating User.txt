@@ -1,0 +1,16 @@
+
+create user 'end_user'@'localhost' identified by 'password';
+
+grant select,insert,update,delete on *.* to 'end_user'@'localhost';
+
+
+-------------------------------------------------------------------------
+create user'admin'@'localhost' identified by 'password';
+
+grant insert,select,update,delete,create,alter on *.* to 'admin'@'localhost';
+-------------------------------------------------------------------------
+create user 'super_admin'@'localhost' identified by 'password';
+
+grant all privileges on *.* to 'super_admin'@'localhost';
+-------------------------------------------------------------------------
+
